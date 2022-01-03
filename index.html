@@ -1,4 +1,4 @@
-<form 
+<!--<form 
   method="POST" 
   action="https://script.google.com/macros/s/AKfycbxGFwl4-hNfk77Nf0YKMXvK2C8lggrLSgHQPmK-TS3N1D36pEfFzJSkj83B6NVIib53/exec"
 >
@@ -6,3 +6,199 @@
   <input name="Name" type="text" placeholder="Name" required>
   <button type="submit">Send</button>
 </form>
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Hardwood Creek Program Survey
+	</title>
+
+	<style>
+		h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.question {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		.choice {font-size: 16px;}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 35px;
+			display: block;
+			height: 75px;
+			width: 100%;
+			margin-top: 25px;
+			margin-bottom: 20px;
+		}
+
+		
+		/* Styling test box */
+		#comment {
+			height: 100px;
+		{
+	</style>
+</head>
+
+<body>
+	</br><h1>Hardwood Creek Adult Program Survey</h1>
+
+	<!-- Create Form -->
+	<form id="form" form onsubmit="setTimeout(function(){window.location.reload();},10);"   action="https://script.google.com/macros/s/AKfycbxGFwl4-hNfk77Nf0YKMXvK2C8lggrLSgHQPmK-TS3N1D36pEfFzJSkj83B6NVIib53/exec"
+ method="POST">
+
+		<!-- Details -->
+
+		<div class="form-control">
+			<label class="question">1. What types of events would you like to see more of at the library?
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<div class="choice">
+			<label for="inp-1">
+				<input type="checkbox"
+					name="type" value="H&W"> Health and wellness</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="type" value="Tech"> Technology</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="type" value="Presenters"> Presenters</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="type" value="A&C"> Arts and Crafts</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="type" value="Social"> Social programs (board/card games, language conversation clubs)</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="type" value="Other"> Other (please specify in question 4)</input></label>
+		</div></div>
+
+		
+		<div class="form-control">
+			<label class="question">2. What age range would you like to see more events geared towards?
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<div class="choice">
+			<label for="inp-1">
+				<input type="checkbox"
+					name="age" value="All"> All ages</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="age" value="12"> 0-12</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="age" value="18"> 12-18</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="age" value="30"> 18-30</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="age" value="30+"> 30+</input></label>
+		</div></div>
+         <div class="form-control">
+            <label class="question">
+                3. When would you prefer to come to an event?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+	<div class="choice">
+            <label for="weekday-evenings">
+                <input type="radio"
+                       id="weekday-evenings"
+                       name="when" value="wkdy eve"> Weekday evenings</input>
+            </label>
+            <label for="weekday-daytime">
+                <input type="radio"
+                       id="weekday-daytime"
+                       name="when" value="wkdy day"> Weekday daytimes</input>
+            </label>
+            <label for="weekends">
+                <input type="radio"
+                       id="weekends"
+                       name="when" value="wknd"> Weekends</input>
+            </label>
+        </div></div>
+		<div class="form-control">
+			<label class="question" for="comment">
+				4. Please enter program ideas you might like to see at the library:
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment" value="ideas">
+			</textarea>
+		</div>
+
+		<div class="form-control">
+            	
+		<!-- Multi-line Text Input Control -->
+		<button type="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
